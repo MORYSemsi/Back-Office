@@ -27,6 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" type="text/css" href="css/table-style.css" />
 <link rel="stylesheet" type="text/css" href="css/basictable.css" />
 <script type="text/javascript" src="js/jquery.basictable.min.js"></script>
+<script src="myjs/utilisateur.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function() {
       $('#table').basictable();
@@ -264,7 +265,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<th>Opérations</th>
 						  </tr>
 						</thead>
-						<tbody>
+						<tbody id="listUtilisateurs">
 						  <tr>
 							<td>Jill Smith</td>
 							<td>25</td>
@@ -409,7 +410,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Bootstrap Core JavaScript -->
    <script src="js/bootstrap.min.js"></script>
    <!-- /Bootstrap Core JavaScript -->	   
-
+   <script>
+       findUtilisateur();
+   </script>
         
     </body>
 </html>
